@@ -27,7 +27,7 @@
         </td>
         @else
         <td class="">
-            <button class="btn btn-danger text-white disabled" type="button">Delete User</button>
+            <button class="btn btn-danger text-white disabled" type="button">Hapus User</button>
         </td>
         @endif
     </tr>
@@ -35,7 +35,7 @@
 </table>
 @else
 <div class="bg-light p-3 font-weight-bold rounded text-center">
-    There are currently no users
+    Saat ini tidak ada users.
 </div>
 @endif
 @include('components.flash-message')

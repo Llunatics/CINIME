@@ -40,7 +40,7 @@
                                 <div class="form-group">
                                     <div class="checkbox pad-bottom-10">
                                         <input id="remember-me" type="checkbox" name="remember-me" value="yes">
-                                        <label for="remember-me">Keep me signed in</label>
+                                        <label for="remember-me">Ingat saya</label>
                                     </div>
                                 </div>
 
@@ -53,7 +53,7 @@
 
                             <div class="bottom-links">
                                 <span>
-                                    Not a member?
+                                    Belum punya akun?
                                     <a href="{{ route('register') }}">Sign up</a>
                                 </span>
                             </div>
@@ -68,7 +68,7 @@
                     <!-- ===== Start of Forget Password wrapper ===== -->
                     <div class="forgetpassword-wrapper">
                         <div class="small-dialog-headline">
-                            <h4 class="text-center">Forgotten Password</h4>
+                            <h4 class="text-center">Lupa Password</h4>
                         </div>
 
                         <div class="small-dialog-content">
@@ -78,7 +78,7 @@
                                 <p class="status"></p>
 
                                 <div class="form-group">
-                                    <label for="password">Email Address *</label>
+                                    <label for="password">Alamat Email *</label>
                                     <input type="email" name="user_login" class="form-control" id="email3"
                                         placeholder="Email Address *" />
                                 </div>

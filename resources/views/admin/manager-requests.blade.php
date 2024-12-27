@@ -8,7 +8,7 @@
         <tr>
             <th scope="col">Username</th>
             <th scope="col">Email</th>
-            <th scope="col">Created at</th>
+            <th scope="col">Dibuat Pada</th>
             <th scope="col"></th>
             <th scope="col"></th>
         </tr>
@@ -39,7 +39,7 @@
 </table>
 @else
 <div class="bg-light p-3 font-weight-bold rounded text-center">
-    There are currently no manager requests.
+    Saat ini tidak ada request manager.
 </div>
 @endif
 @include('components.flash-message')

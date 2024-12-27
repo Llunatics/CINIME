@@ -1,14 +1,14 @@
 <div class="container">
-    <h1 class="mt-0 mb-0">My Reservations</h1>
+    <h1 class="mt-0 mb-0">Reservasi Saya</h1>
     <hr>
     @if ($reservations->isNotEmpty())
         <table class="table table-responsive table-striped table-hover">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Movie</th>
-                    <th scope="col">Show time</th>
-                    <th scope="col">Seat number</th>
-                    <th scope="col">Show price</th>
+                    <th scope="col">Waktu Mulai</th>
+                    <th scope="col">Nomor Kursi</th>
+                    <th scope="col">Harga</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -32,7 +32,7 @@
         </table>
     @else
         <div class="bg-light p-3 font-weight-bold rounded text-center">
-            You don't have any future reservations.
+            Kamu belum punya reservasi apa pun saat ini.
         </div>
     @endif
 </div>

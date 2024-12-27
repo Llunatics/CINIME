@@ -2,7 +2,7 @@
 
 @section('content')
 <h1 class="h3 mb-0 text-gray-800">Movies</h1>
-<p>Deleting a movie deletes its shows and subsequent reservations.</p>
+<p>Menghapus movie akan menghapus reservasinya juga.</p>
 @if ($movies->isNotEmpty())
 <table class="showtime-table table table-striped table-hover rounded">
     <thead class="thead-dark">
@@ -42,7 +42,7 @@
 </table>
 @else
 <div class="bg-light p-3 font-weight-bold rounded text-center">
-    There are currently no movies.
+    Saat ini tidak ada movies.
 </div>
 @endif
 @include('components.flash-message')

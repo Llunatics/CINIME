@@ -28,7 +28,7 @@
 
                                 <div class="row">
                                     <div class="form-group col-6">
-                                        <label for="first_name">First Name*</label>
+                                        <label for="first_name">Nama Pertama*</label>
                                         <input name="first_name" id="first_name" class="form-control" type="text"
                                             value="{{ old('first_name') }}" required />
                                         @include('components.error-message', [
@@ -36,7 +36,7 @@
                                         ])
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="last_name">Last Name</label>
+                                        <label for="last_name">Nama Akhir</label>
                                         <input name="last_name" id="last_name" class="form-control" type="text"
                                             value="{{ old('last_name') }}" />
                                         @include('components.error-message', ['field_name' => 'last_name'])
@@ -66,7 +66,7 @@
                                     </div>
 
                                     <div class="form-group col-6">
-                                        <label for="password_confirmation">ReEnter Password*</label>
+                                        <label for="password_confirmation">Masukkan Ulang Password*</label>
                                         <input name="password_confirmation" id="password_confirmation"
                                             class="form-control" type="password" required />
                                     </div>
@@ -92,7 +92,7 @@
 
                             <div class="bottom-links">
                                 <span>
-                                    Already have an account?
+                                    Sudah Punya Akun?
                                     <a href="{{ route('login') }}">Sign in</a>
                                 </span>
                             </div>
@@ -106,7 +106,7 @@
                     <!-- ===== Start of Forget Password wrapper ===== -->
                     <div class="forgetpassword-wrapper">
                         <div class="small-dialog-headline">
-                            <h4 class="text-center">Forgotten Password</h4>
+                            <h4 class="text-center">Lupa Password</h4>
                         </div>
 
                         <div class="small-dialog-content">
@@ -116,7 +116,7 @@
                                 <p class="status"></p>
 
                                 <div class="form-group">
-                                    <label for="password">Email Address *</label>
+                                    <label for="password">Alamat Email*</label>
                                     <input type="email" name="user_login" class="form-control" id="email3"
                                         placeholder="Email Address *" />
                                 </div>
@@ -140,7 +140,7 @@
                 </div>
                 <!-- =============== END OF LOGIN & REGISTER POPUP =============== -->
 
-                <a href={{ route('home') }} class="text-white">Back to Home</a>
+                <a href={{ route('home') }} class="text-white">Kembali Home</a>
             </div>
         </main>
     </div>

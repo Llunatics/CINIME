@@ -182,7 +182,7 @@
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
-                                    Upcoming Shows Alerts
+                                    Pemberitahuan Film yang Akan Datang
                                 </h6>
                                 @foreach ($shows->take(5) as $show)
                                     <a class="dropdown-item d-flex align-items-center"
@@ -196,15 +196,13 @@
                                             <div class="small text-gray-500">
                                                 {{ $show->date->diffForHumans() }}
                                             </div>
-                                            <span class="font-weight-bold">Upcoming
-                                                show for
+                                            <span class="font-weight-bold">Film yang akan datang: 
                                                 {{ $show->movie->title }}.</span>
                                         </div>
                                     </a>
                                 @endforeach
                                 <a class="dropdown-item text-center small text-gray-500"
-                                    href="{{ route('manager.shows.index') }}">Show
-                                    All Alerts</a>
+                                    href="{{ route('manager.shows.index') }}">Tampilkan Semua Pemberitahuan</a>
                             </div>
                         </li>
 
@@ -260,7 +258,7 @@
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; {{ config('app.name') }}
-                            2021</span>
+                            2024</span>
                     </div>
                 </div>
             </footer>
@@ -288,8 +286,8 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready
-                    to end your current session.</div>
+                <div class="modal-body">Pilih "Logout" di bawah kalau kamu
+                    mau mengakhiri sesi.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <form id="logout_form" method="POST" action="{{ route('logout') }}">
