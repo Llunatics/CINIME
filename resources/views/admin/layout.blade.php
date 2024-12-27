@@ -148,7 +148,7 @@
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
-                                    Alerts Center
+                                    Pusat Pemberitahuan
                                 </h6>
                                 @foreach ($requests->take(5) as $request)
                                     <a class="dropdown-item d-flex align-items-center"
@@ -161,13 +161,12 @@
                                         <div>
                                             <div class="small text-gray-500">
                                                 {{ $request->created_at->diffForHumans() }}</div>
-                                            <span class="font-weight-bold">{{ $request->username }} has requested to
-                                                become a manager.</span>
+                                            <span class="font-weight-bold">{{ $request->username }} meminta untuk menjadi manager.</span>
                                         </div>
                                     </a>
                                 @endforeach
                                 <a class="dropdown-item text-center small text-gray-500"
-                                    href="{{ route('users.manager-requests') }}">Show All Alerts</a>
+                                    href="{{ route('users.manager-requests') }}">Tampilkan Semua Pemberitahuan</a>
                             </div>
                         </li>
 
@@ -250,7 +249,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Pilih "Logout" di bawah kalau kamu mau mengakhiri sesi.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <form id="logout_form" method="POST" action="{{ route('logout') }}">

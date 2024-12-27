@@ -51,7 +51,7 @@
                     <div class="d-flex align-items-center">
                         <label for="category" class="pr-1 text-nowrap">Category:</label>
                         <select name="category" id="category" class="py-1">
-                            <option value="" default>All Categories</option>
+                            <option value="" default>Semua Kategori</option>
                             @foreach (\App\Models\Category::CATEGORIES as $category)
                                 <option value="{{ $category }}"
                                     {{ request('category') == $category ? 'selected' : '' }}>
@@ -64,13 +64,13 @@
                     <div class="px-3 py-3 py-xl-0"></div>
 
                     <div class="d-flex align-items-center">
-                        <label for="sort" class="pr-1 text-nowrap">Sort by: </label>
+                        <label for="sort" class="pr-1 text-nowrap">Urut berdasarkan: </label>
                         @php
                             $sortings = [
                                 'default' => 'Default Order',
-                                'top-rated' => 'Top Rated',
-                                'newest' => 'Newest',
-                                'oldest' => 'Oldest',
+                                'top-rated' => 'Rating Tertinggi',
+                                'newest' => 'Terbaru',
+                                'oldest' => 'Terlama',
                             ];
                         @endphp
                         <select name="sort" id="sort" class="py-1">
@@ -110,7 +110,7 @@
 
 
             @if ($movies->isEmpty())
-                <p class="bg-light font-weight-bold h4 p-5 rounded text-center">No movies found!</p>
+                <p class="bg-light font-weight-bold h4 p-5 rounded text-center">Tidak ada movies yang ditemukan!</p>
             @else
                 <!-- Start of Movie Grid -->
                 <div class="row" x-show="layout === 'grid'" x-transition>
