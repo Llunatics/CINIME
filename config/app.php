@@ -67,7 +67,7 @@ return [
     |
      */
 
-    'timezone' => 'Africa/Cairo',
+    'timezone' => 'Asia/Jakarta',
 
     /*
     |--------------------------------------------------------------------------
@@ -233,5 +233,6 @@ return [
     ],
 
     // Custom app config
-    'currency' => 'EGP',
+    'currency' => 'Rp',
 ];
+
